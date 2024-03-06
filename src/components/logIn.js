@@ -29,15 +29,6 @@ export default connect(mapStateToProps)(function LogIn(props) {
     const emailRef=useRef('');
     const passwordRef=useRef('');
     const newNavigate=useNavigate();
-    // const logIn=()=>{
-    //     if(!(users.some(user=>(user.email===emailRef.current.value)&&(user.password===passwordRef.current.value))))
-    //         alert("The email or password is incorrect")
-    //     else{
-    //         setFlagConect(true)
-    //         dispatch(addCurrentUser(users.find(user=>user.email===emailRef.current.value)))
-    //         return newNavigate('/');
-    //     }
-    // }  
     const getData=async()=>{
         try{
             const reaspons = await axios.get('http://localhost:5000/users')

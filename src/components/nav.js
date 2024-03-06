@@ -27,7 +27,7 @@ function mapStateToProps(state){
         user:state.currentUser.currentUser
     }
 }
-
+//
 
 export default connect(mapStateToProps)(function Nav(props) {
     const {dispatch,user,flagConect,setFlagConect}=props

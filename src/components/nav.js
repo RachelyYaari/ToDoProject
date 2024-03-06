@@ -207,5 +207,5 @@ export default connect(mapStateToProps)(function Nav(props) {
             </Toolbar>
         </Container>
         </AppBar>
-  );
+    );
 })
